@@ -1,4 +1,5 @@
 import datetime
+import os
 
 def timeToTimestamp(time):
     d = datetime.datetime.strptime(time, "%H:%M:%S").replace(year=1970) + datetime.timedelta(hours=1)
@@ -28,6 +29,6 @@ with open("index_light.html", "w") as light:
     light.write(HTML_light)
 with open("index_dark.html", "w") as dark:
     dark.write(HTML_dark)
-
+os.system("scp index_light.html index_dark.html times.dat ll345374@students.mimuw.edu.pl:public_html/kucharzuk")
 
 
