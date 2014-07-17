@@ -23,7 +23,8 @@ Highcharts.theme = {
 	},
     credits: {
         style: {
-            color: '#f45b5b'
+            color: '#f45b5b',
+            fontSize: '10px'
         }
     },
 	title: {
